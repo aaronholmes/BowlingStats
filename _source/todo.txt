@@ -1,0 +1,10 @@
+Public site structure:
+
+- Home
+- About
+- Help
+- Get Started
+- Sign up
+- Sign in
+- Blog
+- Forum
