@@ -8,3 +8,5 @@ Public site structure:
 - Sign in
 - Blog
 - Forum
+
+Private site structure: Profile- Stats
