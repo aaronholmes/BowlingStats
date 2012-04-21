@@ -78,4 +78,17 @@ class User extends AppModel {
 	  	}
 		return substr(Security::hash(Configure::read('Security.salt') . $this->field('created') . date('Ymd')), 0, 8);
 	}
+
+	function activateUser($userID) {
+		// Update the active flag in the database
+		$this->read(null, $userID);
+		$this->set('activated', 1);
+		if($this->save()) {
+			return true;
+		}
+	}
+
+	function getUserInfo($userID) {
+		return $this->find('first', array('conditions' => array('User.id' => $userID)));
+	}
 }

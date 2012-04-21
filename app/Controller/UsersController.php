@@ -92,12 +92,11 @@ class UsersController extends AppController {
 
 		if ($this->User->exists() && ($in_hash == $this->User->getActivationHash()))
 		{
-		        // Update the active flag in the database
-		        $this->User->query("Update users set activated=1 where id=".$this->User->id);
-
-		        // Let the user know they can now log in!
-		        $this->Session->setFlash('Your account has been activated, please log in below');
-		        $this->redirect('login');
+		        if($this->User->activateUser($this->User->id)) {
+		        	// Let the user know they can now log in!
+		        	$this->Session->setFlash('Your account has been activated, please log in below');
+		        	$this->redirect('/users/login');
+		        }
 		}
 
 		// Activation failed, render ‘/views/user/activate.ctp’ which should tell the user.
@@ -106,7 +105,7 @@ class UsersController extends AppController {
 	
 	function __sendActivationEmail($user_id)  {
 		
-		$user = $this->User->find('first', array('conditions' => array('User.id' => $user_id)));
+		$user = $this->User->getUserInfo($user_id);
 
 	    if ($user === false) {
 	            debug(__METHOD__." failed to retrieve User data for user.id: {$user_id}");
