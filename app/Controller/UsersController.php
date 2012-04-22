@@ -4,7 +4,8 @@ App::uses('Sanitize', 'Utility');
 
 class UsersController extends AppController {
 	var $name = 'Users';
-	var $components = array('Email', 'email', 'Auth');
+	var $components = array('Email', 'email', 'Auth', 'Session');
+	var $helpers = array("Form", "Session", "Html");
 	
 	function beforeFilter() {
 		$this->Auth->Allow('index', 'register', 'thanks', 'login', 'activate');
@@ -79,6 +80,10 @@ class UsersController extends AppController {
 	
 	function dashboard() {
 		
+	}
+
+	function profile() {
+
 	}
 
 	/**
