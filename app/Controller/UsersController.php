@@ -83,7 +83,22 @@ class UsersController extends AppController {
 	}
 
 	function profile() {
+		$user = $this->User->getUserInfo($this->Session->read('Auth.User.id'));
 
+		if ($this->request->is('post')) {
+			$this->User->id = $this->Session->read('Auth.User.id');
+			if ($this->User->save($this->request->data)) {
+	            // Set a session flash message and redirect.
+	            $this->Session->setFlash("Your Profile has been saved!");
+	            $this->redirect('/users/profile');
+	        }
+		} 
+		
+		$this->set('user', $user);
+	}
+
+	function bowlers() {
+		
 	}
 
 	/**

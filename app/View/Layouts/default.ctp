@@ -37,23 +37,20 @@
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<!-- styles -->
-	
-	<?php
-		echo $this->Html->css('bootstrap/bootstrap');
-		//echo $this->Html->css('bootstrap/bootstrap-responsive');
-		//echo $this->Html->css('bootstrap/docs');
-		//echo $this->Html->css('bootstrap/prettify');
-	?>
 
 	<link rel="stylesheet/less" href="/css/bootstrap/bootstrap.less">
 	<link rel="stylesheet/less" href="/css/bootstrap/bootstrap-responsive.less">
+	<link rel="stylesheet/less" href="/css/bootstrap/dropdown.less">
 	<link rel="stylesheet/less" href="/css/bootstrap/docs.less">
 	<link rel="stylesheet/less" href="/css/bootstrap/prettify.less">
 	<script src="/js/less-1.3.0.min.js"></script>
+	
 
 	<style type="text/css">
       body {
-        padding-top: 90px;
+        padding-top: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
         padding-bottom: 40px;
       }
     </style>
@@ -74,11 +71,18 @@
 <body data-spy="scroll" data-target=".subnav" data-offset="50">	
 	<?php echo $this->element('users/admin_nav'); ?>
 	<div id="container">
-  	<div id="row">
-    	<?php echo $this->Session->flash(); ?>
-    	<?php echo $content_for_layout; ?>
+	  	<div id="row">
+	    	<?php echo $this->Session->flash(); ?>
+	    	<?php echo $content_for_layout; ?>
+	  	</div>
   	</div>
-  	</div>
+
+  	<script src="/js/bootstrap/jquery.js"></script>
+	<script src="/js/bootstrap/bootstrap-dropdown.js"></script>
+	<script src="/js/bootstrap/bootstrap-modal.js"></script>
+	<script src="/js/bootstrap/application.js"></script>
+
   	<?php echo $this->element('sql_dump'); ?>
+
 </body>
 </html>
