@@ -44,6 +44,8 @@
 	<link rel="stylesheet/less" href="/css/bootstrap/docs.less">
 	<link rel="stylesheet/less" href="/css/bootstrap/prettify.less">
 	<script src="/js/less-1.3.0.min.js"></script>
+
+	<link rel="stylesheet" href="/css/jquery-ui.css" type="text/css" media="all" />
 	
 
 	<style type="text/css">
@@ -69,6 +71,14 @@
 	<?php echo $scripts_for_layout; ?>
 </head>
 <body data-spy="scroll" data-target=".subnav" data-offset="50">	
+	<script src="/js/bootstrap/jquery.js"></script>
+	<script src="/js/jquery-1.8.19-ui.min.js" type="text/javascript"></script>
+	<script src="/js/bootstrap/bootstrap-dropdown.js"></script>
+	<script src="/js/bootstrap/bootstrap-modal.js"></script>
+	<script src="/js/bootstrap/bootstrap-tooltip.js"></script>
+	<script src="/js/bootstrap/bootstrap-popover.js"></script>
+	<script src="/js/bootstrap/bootstrap-carousel.js"></script>
+	<script src="/js/bootstrap/application.js"></script>
 	<?php echo $this->element('users/admin_nav'); ?>
 	<div id="container">
 	  	<div id="row">
@@ -77,10 +87,7 @@
 	  	</div>
   	</div>
 
-  	<script src="/js/bootstrap/jquery.js"></script>
-	<script src="/js/bootstrap/bootstrap-dropdown.js"></script>
-	<script src="/js/bootstrap/bootstrap-modal.js"></script>
-	<script src="/js/bootstrap/application.js"></script>
+  	
 
   	<?php echo $this->element('sql_dump'); ?>
 
