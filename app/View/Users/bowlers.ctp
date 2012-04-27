@@ -65,20 +65,40 @@
         "help_block" => ""
     ));
 
-		echo $this->Form->input('Profile Image:', array('type' => 'file'));
-
+    echo "<div><div class='profileImage'><span id='uploadButton'>Change Image</span></div>";
+		echo $this->Form->input('Profile Image:', array(
+        'type' => 'file',
+        'div' => array(
+          'class' => 'imageUpload')));
+    echo "</div>";
 		
     ?>
 
-<script>
-  $(function() {
-    $( "#UserBirthdate" ).datepicker();
-  });
-  </script>
+    <div id="file-uploader-demo1">    
+    <noscript>      
+      <p>Please enable JavaScript to use file uploader.</p>
+      <!-- or put a simple form for upload here -->
+    </noscript>         
+  </div>
 
-<div class="demo-description" style="display: none; ">
-<p>The datepicker is tied to a standard form input field.  Focus on the input (click, or use the tab key) to open an interactive calendar in a small overlay.  Choose a date, click elsewhere on the page (blur the input), or hit the Esc key to close. If a date is chosen, feedback is shown as the input's value.</p>
-</div><!-- End demo-description -->
+    <script src="/js/fileuploader.js" type="text/javascript"></script>
+    <script>
+      $(function() {
+        
+          function createUploader(){            
+              var uploader = new qq.FileUploader({
+                  element: document.getElementById('uploadButton'),
+                  action: 'do-nothing.htm',
+                  debug: true
+              }); 
+          }  
+
+          $( "#UserBirthdate" ).datepicker();
+          createUploader();        
+        
+      });
+    </script>
+
   </div>
   <div class="modal-footer">
     <a href="#" class="btn" data-dismiss="modal">Close</a>

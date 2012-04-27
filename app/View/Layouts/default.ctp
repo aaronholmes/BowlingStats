@@ -46,7 +46,7 @@
 	<script src="/js/less-1.3.0.min.js"></script>
 
 	<link rel="stylesheet" href="/css/jquery-ui.css" type="text/css" media="all" />
-	
+	<link rel="stylesheet" href="/css/app-style.css" type="text/css" media="all" />
 
 	<style type="text/css">
       body {

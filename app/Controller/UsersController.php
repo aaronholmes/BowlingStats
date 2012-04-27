@@ -2,7 +2,9 @@
 
 App::uses('Sanitize', 'Utility');
 
+
 class UsersController extends AppController {
+
 	var $name = 'Users';
 	var $components = array('Email', 'email', 'Auth', 'Session');
 	var $helpers = array("Form", "Session", "Html");
@@ -98,7 +100,38 @@ class UsersController extends AppController {
 	}
 
 	function bowlers() {
+
+		$login['user'] ='a';
+		$login['pass'] ='b';
 		
+		$c = curl_init('http://www.bowlingstats.dev/api/1/bowlers.xml');
+
+		curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
+		//curl_setopt($c, CURLOPT_USERPWD, $login['user'] . ':' . $login['pass']);
+		//curl_setopt($c, CURLOPT_HTTPAUTH, CURLAUTH_DIGEST);
+		//curl_setopt($c, CURLOPT_SSL_VERIFYPEER, false);
+		//curl_setopt($c, CURLOPT_FOLLOWLOCATION, true);
+
+		$response = curl_exec($c);
+		$info = curl_getinfo($c);
+
+print_r($response);
+//print_r($info);
+		curl_close($c);
+
+		if($info['http_code'] == $this->_http_codes['OK']) {
+		    //success
+		    if($this->_format == 'xml')
+		        $response = Xml::toArray(Xml::build($response));
+		    else//JSON
+		        $response = json_decode($response);
+		        return $response['response']['data'];
+		} else if($info['http_code'] == $this->_http_codes['Unauthorized']) {
+		    return false;
+		} else {
+		    return null;
+		}
+				
 	}
 
 	/**
