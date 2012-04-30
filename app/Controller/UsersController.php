@@ -9,12 +9,12 @@ App::import('Vendor', 'oauth2-php/lib/IOAuth2RefreshTokens');
 class UsersController extends AppController {
 
 	var $name = 'Users';
-	var $components = array('Email', 'email', 'Auth', 'Session', 'OAuth.OAuth');
+	var $components = array('Email', 'email', 'Auth', 'Session', 'OAuth.OAuth', 'BowlingStatsAPIAuth');
 	var $helpers = array("Form", "Session", "Html");
 	
 	function beforeFilter() {
-		$this->Auth->Allow('index', 'register', 'thanks', 'login', 'activate');
-		$this->OAuth->allow(array('index', 'register', 'thanks', 'login', 'activate', 'dashboard', 'bowlers'));
+		$this->Auth->Allow('index', 'register', 'thanks', 'login', 'activate', 'logout');
+		$this->OAuth->allow(array('index', 'register', 'thanks', 'login', 'logout', 'activate', 'dashboard', 'bowlers'));
 		$this->Auth->autoRedirect = false;
 	}
 
@@ -104,36 +104,20 @@ class UsersController extends AppController {
 	}
 
 	function bowlers() {
-		$user_id = $this->Session->read('Auth.User.id');
-		$user = $this->User->find('first', array(
-			'conditions' => array(
-				'id' => $user_id)));
-
-		App::uses('HttpSocket', 'Network/Http');
-		$http = new HttpSocket();
-		
-		$response = $http->get('www.bowlingstats.com/api/1/bowlers.xml?access_token='.$user['User']['access_token']);
-
-		$data = json_decode($response->body, true);
-
-		if($data['error_description'] == "The access token provided has expired.") {
-			$accessToken = $http->get('www.bowlingstats.com/oauth/token?grant_type=refresh_token&refresh_token='.$user['User']['refresh_token'].'&client_id='.$user['User']['client_id'].'&client_secret='.$user['User']['client_secret']);
-
-			$data = json_decode($accessToken->body, true);
-
-			$this->User->id = $user_id;
-			$userInfo['User'] = array(
-				'access_token' => $data['access_token'],
-				'refresh_token' => $data['refresh_token']);
-
-			$this->User->save($userInfo);
-
-			$response = $http->get('www.bowlingstats.com/api/1/bowlers.xml?access_token='.$data['access_token']);
+		$location = "/api/1/bowlers.xml";
+		$response = $this->BowlingStatsAPIAuth->fetchData($location);
+		try {
+		    $bowlers = Xml::toArray(Xml::build($response->body));
+		    if(!empty($bowlers['response']['data'])) {
+		    	$this->set('bowlers', $bowlers['response']['data']['bowlers']['bowler']);
+		    }
+		} catch (XmlException $e) {
+		    $bowlers = null;
+		    $this->set('bowlers', $bowlers);	
 		}
-
-		var_dump($response->body);
-
-				
+		
+		
+					
 	}
 
 	/**
@@ -147,37 +131,34 @@ class UsersController extends AppController {
 
 		if ($this->User->exists() && ($in_hash == $this->User->getActivationHash()))
 		{
-		        if($this->User->activateUser($this->User->id)) {
+	        if($this->User->activateUser($this->User->id)) {
 
-		        	// Let's try to setup some OAuth love
-		        	$client = $this->OAuth->Client->add(
-		        			$data['Client']['redirect_uri'] = 'http://www.bowlingstats.com',
-		        			$data['Client']['user_id'] = $user_id);
+	        	// Create the OAuth api account and keys
+	        	$client = $this->OAuth->Client->add(
+	        			$data['Client']['redirect_uri'] = 'http://www.bowlingstats.com',
+	        			$data['Client']['user_id'] = $user_id);
 
-		        	// /oauth/authorize?response_type=code&client_id=xxxx&redirect_url=http%3a%2f%2flocalhost
-		        	App::uses('HttpSocket', 'Network/Http');
-					$http = new HttpSocket();
+	        	App::uses('HttpSocket', 'Network/Http');
+				$http = new HttpSocket();
 
-					$authCode = $this->OAuth->createAuthCode($client['Client']['client_id'], $user_id, $data['Client']['redirect_uri'], $scope = NULL);
-					
-					$accessToken = $http->get('www.bowlingstats.com/oauth/token?grant_type=authorization_code&code='.$authCode.'&client_id='.$client['Client']['client_id'].'&client_secret='.$client['Client']['client_secret']);
-//var_dump($accessToken);
-					$data = json_decode($accessToken->body, true);
+				$authCode = $this->OAuth->createAuthCode($client['Client']['client_id'], $user_id, $data['Client']['redirect_uri'], $scope = NULL);
+				
+				$accessToken = $http->get('www.bowlingstats.com/oauth/token?grant_type=authorization_code&code='.$authCode.'&client_id='.$client['Client']['client_id'].'&client_secret='.$client['Client']['client_secret']);
+				$data = json_decode($accessToken->body, true);
 
+				$userInfo['User'] = array(
+					'access_token' => $data['access_token'],
+					'auth_code' => $authCode,
+					'refresh_token' => $data['refresh_token'],
+					'client_id' => $client['Client']['client_id'],
+					'client_secret' => $client['Client']['client_secret']);
 
-					$userInfo['User'] = array(
-						'access_token' => $data['access_token'],
-						'auth_code' => $authCode,
-						'refresh_token' => $data['refresh_token'],
-						'client_id' => $client['Client']['client_id'],
-						'client_secret' => $client['Client']['client_secret']);
-
-					$this->User->save($userInfo);
-					
-		        	// Let the user know they can now log in!
-		        	$this->Session->setFlash('Your account has been activated, please log in below');
-		        	$this->redirect('/users/login');
-		        }
+				$this->User->save($userInfo);
+				
+	        	// Let the user know they can now log in!
+	        	$this->Session->setFlash('Your account has been activated, please log in below');
+	        	$this->redirect('/users/login');
+	        }
 		}
 
 		// Activation failed, render ‘/views/user/activate.ctp’ which should tell the user.

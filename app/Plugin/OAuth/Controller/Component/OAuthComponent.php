@@ -205,7 +205,7 @@ class OAuthComponent extends Component implements IOAuth2Storage, IOAuth2Refresh
 	public function isAuthorized() {
 		$this->AccessToken->id = $this->getBearerToken();
 		try {
-			echo $this->verifyAccessToken($this->AccessToken->id);
+			$this->verifyAccessToken($this->AccessToken->id);
 		} catch (OAuth2AuthenticateException $e) {
 			return false;
 		}

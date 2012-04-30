@@ -5,23 +5,23 @@
       <th></th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td>Aaron Holmes</td>
-      <td>Edit | Delete</td>
-    </tr>
-    <tr>
-      <td>Aaron Holmes</td>
-      <td>Edit | Delete</td>
-    </tr>
-    <tr>
-      <td>Aaron Holmes</td>
-      <td>Edit | Delete</td>
-    </tr>
-    <tr>
-      <td>Aaron Holmes</td>
-      <td>Edit | Delete</td>
-    </tr>
+  <tbody>  
+   <?php
+     if(!empty($bowlers) && is_array($bowlers)) {
+        foreach($bowlers as $bowler) {
+          echo "<tr>
+                <td>".$bowler['firstname']." ".$bowler['lastname']."</td>
+                <td>Edit | Delete</td>
+              </tr>";
+        }
+     } else {
+       echo "<tr>
+                <td colspan='2'>No bowlers found, add a new one!</td>
+              </tr>";
+     }
+    
+
+   ?>
   </tbody>
 </table>
 
@@ -74,14 +74,7 @@
 		
     ?>
 
-    <div id="file-uploader-demo1">    
-    <noscript>      
-      <p>Please enable JavaScript to use file uploader.</p>
-      <!-- or put a simple form for upload here -->
-    </noscript>         
-  </div>
-
-    <script src="/js/fileuploader.js" type="text/javascript"></script>
+    <!--<script src="/js/fileuploader.js" type="text/javascript"></script>-->
     <script>
       $(function() {
         
@@ -93,8 +86,8 @@
               }); 
           }  
 
-          $( "#UserBirthdate" ).datepicker();
-          createUploader();        
+          //$( "#UserBirthdate" ).datepicker();
+          //createUploader();        
         
       });
     </script>
