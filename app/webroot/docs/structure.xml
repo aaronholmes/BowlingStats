@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="2.0.0a2" title="">
+  <file path="index.php" hash="df8457c55ab1921476c240f693df6a16" package="app">
+    <docblock line="2">
+      <description><![CDATA[PHP 5]]></description>
+      <long-description><![CDATA[<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.10.0.1076"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <include line="17" type="Require" package="app">
+      <name>webroot</name>
+      <docblock line="2">
+        <description><![CDATA[PHP 5]]></description>
+        <long-description><![CDATA[<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+        <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+        <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+        <tag line="2" name="package" description="app"/>
+        <tag line="2" name="since" description="CakePHP(tm) v 0.10.0.1076"/>
+        <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+      </docblock>
+    </include>
+  </file>
+  <file path="Config/acl.ini.php" hash="0e216853990dfb16f21ebc91685c55fd" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file Config/acl.ini.php</error>
+    </parse_markers>
+  </file>
+  <file path="Config/core.php" hash="7ab34fa661f8c15e5b343b38d9d2ccc9" package="app\Config">
+    <docblock line="2">
+      <description><![CDATA[This is core configuration file.]]></description>
+      <long-description><![CDATA[<p>Use it to configure core behavior of Cake.</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.Config"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <constant namespace="default" line="136" package="Default">
+      <name>LOG_ERROR</name>
+      <value><![CDATA[2]]></value>
+      <docblock line="132">
+        <description><![CDATA[Defines the default error type when using the log() function. Used for
+differentiating error logging and debugging. Currently PHP supports LOG_DEBUG.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+    </constant>
+  </file>
+  <file path="Config/bootstrap.php" hash="fb70048c99b301bc90ed69e22377bbb0" package="app\Config">
+    <docblock line="2">
+      <description><![CDATA[This file is loaded automatically by the app/webroot/index.php file after core.php]]></description>
+      <long-description><![CDATA[<p>This file should load/create any application wide configuration settings, such as
+Caching, Logging, loading additional configuration files.</p>
+
+<p>You should also use this file to include any files that provide global functions/constants
+that your application uses.</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.Config"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.10.8.2117"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+  </file>
+  <file path="Config/acl.php" hash="dddea35f25383b3c59aab82ed18110a8" package="app\Config">
+    <docblock line="2">
+      <description><![CDATA[This is the PHP base ACL configuration file.]]></description>
+      <long-description><![CDATA[<p>Use it to configure access control of your Cake application.</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.Config"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 2.1"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+  </file>
+  <file path="Config/routes.php" hash="c1927841f0afc6bef4816be9e6ecdd5c" package="app\Config">
+    <docblock line="2">
+      <description><![CDATA[Routes configuration]]></description>
+      <long-description><![CDATA[<p>In this file, you set up routes to your controllers and their actions.
+Routes are very important mechanism that allows you to freely connect
+different urls to chosen controllers and their actions (functions).</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.Config"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <include line="58" type="Require" package="Default">
+      <name>Config</name>
+      <docblock line="54">
+        <description><![CDATA[Load the CakePHP default routes. Remove this if you do not want to use
+the built-in default routes.]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+    </include>
+  </file>
+  <file path="Config/Schema/db_acl.php" hash="b879243a63cda64479bf0a233f32d0f1" package="app\Config\Schema">
+    <docblock line="4">
+      <description><![CDATA[This is Acl Schema file]]></description>
+      <long-description><![CDATA[<p>Use it to configure database for ACL</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="4" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="4" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="4" name="package" description="app.Config.Schema"/>
+      <tag line="4" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="4" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <parse_markers>
+      <error line="32" code="50018">No DocBlock was found for property $name</error>
+      <error line="34" code="50010">No DocBlock was found for method before()</error>
+      <error line="38" code="50010">No DocBlock was found for method after()</error>
+      <error line="41" code="50018">No DocBlock was found for property $acos</error>
+      <error line="52" code="50018">No DocBlock was found for property $aros</error>
+      <error line="63" code="50018">No DocBlock was found for property $aros_acos</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="30" package="app\Config\Schema">
+      <name>DbAclSchema</name>
+      <full_name>\DbAclSchema</full_name>
+      <extends>\CakeSchema</extends>
+      <docblock line="4">
+        <description><![CDATA[This is Acl Schema file]]></description>
+        <long-description><![CDATA[<p>Use it to configure database for ACL</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+        <tag line="4" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+        <tag line="4" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+        <tag line="4" name="package" description="app.Config.Schema"/>
+        <tag line="4" name="since" description="CakePHP(tm) v 0.2.9"/>
+        <tag line="4" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="32" package="Default">
+        <name>$name</name>
+        <default><![CDATA['DbAcl']]></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="41" package="Default">
+        <name>$acos</name>
+        <default><![CDATA[array(
+			'id' => array('type'=>'integer', 'null' => false, 'default' => NULL, 'length' => 10, 'key' => 'primary'),
+			'parent_id' => array('type'=>'integer', 'null' => true, 'default' => NULL, 'length' => 10),
+			'model' => array('type'=>'string', 'null' => true),
+			'foreign_key' => array('type'=>'integer', 'null' => true, 'default' => NULL, 'length' => 10),
+			'alias' => array('type'=>'string', 'null' => true),
+			'lft' => array('type'=>'integer', 'null' => true, 'default' => NULL, 'length' => 10),
+			'rght' => array('type'=>'integer', 'null' => true, 'default' => NULL, 'length' => 10),
+			'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1))
+		)]]></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="52" package="Default">
+        <name>$aros</name>
+        <default><![CDATA[array(
+			'id' => array('type'=>'integer', 'null' => false, 'default' => NULL, 'length' => 10, 'key' => 'primary'),
+			'parent_id' => array('type'=>'integer', 'null' => true, 'default' => NULL, 'length' => 10),
+			'model' => array('type'=>'string', 'null' => true),
+			'foreign_key' => array('type'=>'integer', 'null' => true, 'default' => NULL, 'length' => 10),
+			'alias' => array('type'=>'string', 'null' => true),
+			'lft' => array('type'=>'integer', 'null' => true, 'default' => NULL, 'length' => 10),
+			'rght' => array('type'=>'integer', 'null' => true, 'default' => NULL, 'length' => 10),
+			'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1))
+		)]]></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="63" package="Default">
+        <name>$aros_acos</name>
+        <default><![CDATA[array(
+			'id' => array('type'=>'integer', 'null' => false, 'default' => NULL, 'length' => 10, 'key' => 'primary'),
+			'aro_id' => array('type'=>'integer', 'null' => false, 'length' => 10, 'key' => 'index'),
+			'aco_id' => array('type'=>'integer', 'null' => false, 'length' => 10),
+			'_create' => array('type'=>'string', 'null' => false, 'default' => '0', 'length' => 2),
+			'_read' => array('type'=>'string', 'null' => false, 'default' => '0', 'length' => 2),
+			'_update' => array('type'=>'string', 'null' => false, 'default' => '0', 'length' => 2),
+			'_delete' => array('type'=>'string', 'null' => false, 'default' => '0', 'length' => 2),
+			'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1), 'ARO_ACO_KEY' => array('column' => array('aro_id', 'aco_id'), 'unique' => 1))
+		)]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="34" package="">
+        <name>before</name>
+        <type>function</type>
+        <argument line="34">
+          <name>$event</name>
+          <default><![CDATA[array()]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="38" package="">
+        <name>after</name>
+        <type>function</type>
+        <argument line="38">
+          <name>$event</name>
+          <default><![CDATA[array()]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="Config/Schema/i18n.php" hash="e22d445d293bbcdfab0a40cff7625fb7" package="app\Config\Schema">
+    <docblock line="4">
+      <description><![CDATA[This is i18n Schema file]]></description>
+      <long-description><![CDATA[<p>Use it to configure database for i18n</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="4" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="4" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="4" name="package" description="app.Config.Schema"/>
+      <tag line="4" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="4" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <parse_markers>
+      <error line="32" code="50018">No DocBlock was found for property $name</error>
+      <error line="34" code="50010">No DocBlock was found for method before()</error>
+      <error line="38" code="50010">No DocBlock was found for method after()</error>
+      <error line="41" code="50018">No DocBlock was found for property $i18n</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="30" package="app\Config\Schema">
+      <name>i18nSchema</name>
+      <full_name>\i18nSchema</full_name>
+      <extends>\CakeSchema</extends>
+      <docblock line="4">
+        <description><![CDATA[This is i18n Schema file]]></description>
+        <long-description><![CDATA[<p>Use it to configure database for i18n</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+        <tag line="4" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+        <tag line="4" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+        <tag line="4" name="package" description="app.Config.Schema"/>
+        <tag line="4" name="since" description="CakePHP(tm) v 0.2.9"/>
+        <tag line="4" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="32" package="Default">
+        <name>$name</name>
+        <default><![CDATA['i18n']]></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="41" package="Default">
+        <name>$i18n</name>
+        <default><![CDATA[array(
+			'id' => array('type'=>'integer', 'null' => false, 'default' => NULL, 'length' => 10, 'key' => 'primary'),
+			'locale' => array('type'=>'string', 'null' => false, 'length' => 6, 'key' => 'index'),
+			'model' => array('type'=>'string', 'null' => false, 'key' => 'index'),
+			'foreign_key' => array('type'=>'integer', 'null' => false, 'length' => 10, 'key' => 'index'),
+			'field' => array('type'=>'string', 'null' => false, 'key' => 'index'),
+			'content' => array('type'=>'text', 'null' => true, 'default' => NULL),
+			'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1), 'locale' => array('column' => 'locale', 'unique' => 0), 'model' => array('column' => 'model', 'unique' => 0), 'row_id' => array('column' => 'foreign_key', 'unique' => 0), 'field' => array('column' => 'field', 'unique' => 0))
+		)]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="34" package="">
+        <name>before</name>
+        <type>function</type>
+        <argument line="34">
+          <name>$event</name>
+          <default><![CDATA[array()]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="38" package="">
+        <name>after</name>
+        <type>function</type>
+        <argument line="38">
+          <name>$event</name>
+          <default><![CDATA[array()]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="Config/Schema/sessions.php" hash="871d76e209f808c5295646bce55c7354" package="app\Config\Schema">
+    <docblock line="4">
+      <description><![CDATA[This is Sessions Schema file]]></description>
+      <long-description><![CDATA[<p>Use it to configure database for Sessions</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="4" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="4" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="4" name="package" description="app.Config.Schema"/>
+      <tag line="4" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="4" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <parse_markers>
+      <error line="32" code="50018">No DocBlock was found for property $name</error>
+      <error line="34" code="50010">No DocBlock was found for method before()</error>
+      <error line="38" code="50010">No DocBlock was found for method after()</error>
+      <error line="41" code="50018">No DocBlock was found for property $cake_sessions</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="30" package="app\Config\Schema">
+      <name>SessionsSchema</name>
+      <full_name>\SessionsSchema</full_name>
+      <extends>\CakeSchema</extends>
+      <docblock line="4">
+        <description><![CDATA[This is Sessions Schema file]]></description>
+        <long-description><![CDATA[<p>Use it to configure database for Sessions</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+        <tag line="4" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+        <tag line="4" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+        <tag line="4" name="package" description="app.Config.Schema"/>
+        <tag line="4" name="since" description="CakePHP(tm) v 0.2.9"/>
+        <tag line="4" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="32" package="Default">
+        <name>$name</name>
+        <default><![CDATA['Sessions']]></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="41" package="Default">
+        <name>$cake_sessions</name>
+        <default><![CDATA[array(
+			'id' => array('type'=>'string', 'null' => false, 'key' => 'primary'),
+			'data' => array('type'=>'text', 'null' => true, 'default' => NULL),
+			'expires' => array('type'=>'integer', 'null' => true, 'default' => NULL),
+			'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1))
+		)]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="34" package="">
+        <name>before</name>
+        <type>function</type>
+        <argument line="34">
+          <name>$event</name>
+          <default><![CDATA[array()]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="38" package="">
+        <name>after</name>
+        <type>function</type>
+        <argument line="38">
+          <name>$event</name>
+          <default><![CDATA[array()]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="Config/database.php" hash="2a0af915b785879fac7a839ab428635b" package="app\Config">
+    <docblock line="2">
+      <description><![CDATA[This is core configuration file.]]></description>
+      <long-description><![CDATA[<p>Use it to configure core behaviour of Cake.</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.Config"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <parse_markers>
+      <error line="62" code="50018">No DocBlock was found for property $default</error>
+      <error line="73" code="50018">No DocBlock was found for property $test</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="60" package="Default">
+      <name>DATABASE_CONFIG</name>
+      <full_name>\DATABASE_CONFIG</full_name>
+      <extends/>
+      <docblock line="26">
+        <description><![CDATA[Database configuration class.]]></description>
+        <long-description><![CDATA[<p>You can specify multiple configurations for production, development and testing.</p>
+
+<p>datasource => The name of a supported datasource; valid options are as follows:
+    Database/Mysql      - MySQL 4 &amp; 5,
+    Database/Sqlite     - SQLite (PHP5 only),
+    Database/Postgres   - PostgreSQL 7 and higher,
+    Database/Sqlserver  - Microsoft SQL Server 2005 and higher</p>
+
+<p>You can add custom database datasources (or override existing datasources) by adding the
+appropriate file to app/Model/Datasource/Database.  Datasources should be named 'MyDatasource.php',</p>
+
+<p>persistent => true / false
+Determines whether or not the database should use a persistent connection</p>
+
+<p>host =>
+the host you connect to the database. To add a socket or port number, use 'port' => #</p>
+
+<p>prefix =>
+Uses the given prefix for all the tables in this database.  This setting can be overridden
+on a per-table basis with the Model::$tablePrefix property.</p>
+
+<p>schema =>
+For Postgres specifies which schema you would like to use the tables in. Postgres defaults to 'public'.</p>
+
+<p>encoding =>
+For MySQL, Postgres specifies the character encoding to use when connecting to the
+database. Uses database default not specified.</p>
+
+<p>unix_socket =>
+For MySQL to connect via socket specify the <code>unix_socket</code> parameter instead of <code>host</code> and <code>port</code></p>]]></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="62" package="Default">
+        <name>$default</name>
+        <default><![CDATA[array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'bowlingstats',
+		'password' => 'bowlingstats',
+		'database' => 'bowlingstats',
+		'prefix' => '',
+		//'encoding' => 'utf8',
+	)]]></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="73" package="Default">
+        <name>$test</name>
+        <default><![CDATA[array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'bowlingstats',
+		'password' => 'bowlingstats',
+		'database' => 'bowlingstats_test',
+		'prefix' => '',
+		//'encoding' => 'utf8',
+	)]]></default>
+      </property>
+    </class>
+  </file>
+  <file path="Console/cake.php" hash="55148c4376d6d1faaab8724d136c5a3d" package="app\Console">
+    <docblock line="3">
+      <description><![CDATA[Command-line code generation utility to automate programmer chores.]]></description>
+      <long-description><![CDATA[<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc.</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="3" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="3" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="3" name="package" description="app.Console"/>
+      <tag line="3" name="since" description="CakePHP(tm) v 2.0"/>
+      <tag line="3" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <include line="28" type="Include" package="Default">
+      <name>$dispatcher</name>
+    </include>
+  </file>
+  <file path="Console/Command/AppShell.php" hash="4d3f9cc7655dcf179f806db16534ce48" package="Default">
+    <docblock line="2">
+      <description><![CDATA[AppShell file]]></description>
+      <long-description><![CDATA[<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 2.0"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="default" line="29" package="app\Console\Command">
+      <name>AppShell</name>
+      <full_name>\AppShell</full_name>
+      <extends>\Shell</extends>
+      <docblock line="21">
+        <description><![CDATA[Application Shell]]></description>
+        <long-description><![CDATA[<p>Add your application-wide methods in the class below, your shells
+will inherit them.</p>]]></long-description>
+        <tag line="21" name="package" description="app.Console.Command"/>
+      </docblock>
+    </class>
+  </file>
+  <file path="Controller/PagesController.php" hash="6eae889f5f50ad28e6ca0275707ce906" package="app\Controller">
+    <docblock line="2">
+      <description><![CDATA[Static content controller.]]></description>
+      <long-description><![CDATA[<p>This file will render views from views/pages/</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.Controller"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <parse_markers>
+      <notice line="55" code="50013">Parameter  could not be found in display()</notice>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="32" package="app\Controller">
+      <name>PagesController</name>
+      <full_name>\PagesController</full_name>
+      <extends>\AppController</extends>
+      <docblock line="24">
+        <description><![CDATA[Static content controller]]></description>
+        <long-description><![CDATA[<p>Override this controller by placing a copy in controllers directory of an application</p>]]></long-description>
+        <tag line="24" name="package" description="app.Controller"/>
+        <tag line="24" name="link" description="http://book.cakephp.org/2.0/en/controllers/pages-controller.html" link="http://book.cakephp.org/2.0/en/controllers/pages-controller.html"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="39" package="Default">
+        <name>$name</name>
+        <default><![CDATA['Pages']]></default>
+        <docblock line="34">
+          <description><![CDATA[Controller name]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="34" name="var" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="46" package="Default">
+        <name>$helpers</name>
+        <default><![CDATA[array('Html', 'Session')]]></default>
+        <docblock line="41">
+          <description><![CDATA[Default helper]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="41" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="53" package="Default">
+        <name>$uses</name>
+        <default><![CDATA[array()]]></default>
+        <docblock line="48">
+          <description><![CDATA[This controller does not use a model]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="48" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="61" package="">
+        <name>display</name>
+        <type>function</type>
+        <docblock line="55">
+          <description><![CDATA[Displays a view]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="55" name="param" description="What page to display" type="mixed" variable="">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="55" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+  </file>
+  <file path="Controller/AppController.php" hash="f77ce71a1bed60c35d90eb73ca6104fd" package="app\Controller">
+    <docblock line="2">
+      <description><![CDATA[Application level Controller]]></description>
+      <long-description><![CDATA[<p>This file is application-wide controller file. You can put all
+application-wide controller-related methods here.</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.Controller"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <parse_markers>
+      <error line="35" code="50018">No DocBlock was found for property $helpers</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="34" package="app\Controller">
+      <name>AppController</name>
+      <full_name>\AppController</full_name>
+      <extends>\Controller</extends>
+      <docblock line="25">
+        <description><![CDATA[Application Controller]]></description>
+        <long-description><![CDATA[<p>Add your application-wide methods in the class below, your controllers
+will inherit them.</p>]]></long-description>
+        <tag line="25" name="package" description="app.Controller"/>
+        <tag line="25" name="link" description="http://book.cakephp.org/2.0/en/controllers.html#the-app-controller" link="http://book.cakephp.org/2.0/en/controllers.html#the-app-controller"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="35" package="Default">
+        <name>$helpers</name>
+        <default><![CDATA[array("TwitterBootstrap.TwitterBootstrap")]]></default>
+      </property>
+    </class>
+  </file>
+  <file path="Controller/UsersController.php" hash="c87431b12d7a2a0397927fbcb2bffb70" package="Default">
+    <parse_markers>
+      <error line="6" code="50018">No DocBlock was found for property $name</error>
+      <error line="7" code="50018">No DocBlock was found for property $components</error>
+      <error line="8" code="50018">No DocBlock was found for property $helpers</error>
+      <error line="10" code="50010">No DocBlock was found for method beforeFilter()</error>
+      <error line="15" code="50010">No DocBlock was found for method index()</error>
+      <error line="19" code="50010">No DocBlock was found for method login()</error>
+      <error line="41" code="50010">No DocBlock was found for method logout()</error>
+      <error line="45" code="50010">No DocBlock was found for method register()</error>
+      <error line="77" code="50010">No DocBlock was found for method thanks()</error>
+      <error line="81" code="50010">No DocBlock was found for method dashboard()</error>
+      <error line="85" code="50010">No DocBlock was found for method profile()</error>
+      <error line="100" code="50010">No DocBlock was found for method bowlers()</error>
+      <error line="104" code="50014">Name of argument $user_id does not match with the DocBlock's name $in_hash in activate()</error>
+      <error line="104" code="50015">Argument $in_hash is missing from the Docblock of activate()</error>
+      <error line="126" code="50010">No DocBlock was found for method __sendActivationEmail()</error>
+      <error line="5" code="50000">No DocBlock was found for UsersController</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file Controller/UsersController.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="5" package="Default">
+      <name>UsersController</name>
+      <full_name>\UsersController</full_name>
+      <extends>\AppController</extends>
+      <property final="false" static="false" visibility="public" line="6" package="Default">
+        <name>$name</name>
+        <default><![CDATA['Users']]></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="7" package="Default">
+        <name>$components</name>
+        <default><![CDATA[array('Email', 'email', 'Auth', 'Session')]]></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="8" package="Default">
+        <name>$helpers</name>
+        <default><![CDATA[array("Form", "Session", "Html")]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="10" package="">
+        <name>beforeFilter</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="15" package="">
+        <name>index</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="19" package="">
+        <name>login</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="41" package="">
+        <name>logout</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="45" package="">
+        <name>register</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="77" package="">
+        <name>thanks</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="81" package="">
+        <name>dashboard</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="85" package="">
+        <name>profile</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="100" package="">
+        <name>bowlers</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="110" package="">
+        <name>activate</name>
+        <type>function</type>
+        <docblock line="104">
+          <description><![CDATA[Activates a user account from an incoming link]]></description>
+          <long-description><![CDATA[<p>@param Int $user_id User.id to activate</p>]]></long-description>
+          <tag line="104" name="param" description="Incoming Activation Hash from the email" type="String" variable="$in_hash">
+            <type by_reference="false">String</type>
+          </tag>
+        </docblock>
+        <argument line="110">
+          <name>$user_id</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+        <argument line="110">
+          <name>$in_hash</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="126" package="">
+        <name>__sendActivationEmail</name>
+        <type>function</type>
+        <argument line="126">
+          <name>$user_id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="Controller/BowlersController.php" hash="6aca179ddc8160ca737ec74fe1fad94c" package="bowlingstats-admin">
+    <docblock line="3">
+      <description><![CDATA[Bowlers Controller]]></description>
+      <long-description><![CDATA[<p>This controller holds rest API functionality for bowler objects</p>
+
+<p>Here are the tags:</p>]]></long-description>
+      <tag line="3" name="package" description="bowlingstats-admin"/>
+      <tag line="3" name="access" description="public"/>
+      <tag line="3" name="author" description="Aaron Holmes &lt;aholmes@pureguru-software.com&gt;"/>
+      <tag line="3" name="copyright" description="Aaron Holmes April 25th, 2012"/>
+      <tag line="3" name="version" description="1.0"/>
+    </docblock>
+    <parse_markers>
+      <error line="18" code="50018">No DocBlock was found for property $components</error>
+      <error line="36" code="50015">Argument $id is missing from the Docblock of view()</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="16" package="bowlingstats-admin">
+      <name>BowlersController</name>
+      <full_name>\BowlersController</full_name>
+      <extends>\AppController</extends>
+      <docblock line="3">
+        <description><![CDATA[Bowlers Controller]]></description>
+        <long-description><![CDATA[<p>This controller holds rest API functionality for bowler objects</p>
+
+<p>Here are the tags:</p>]]></long-description>
+        <tag line="3" name="package" description="bowlingstats-admin"/>
+        <tag line="3" name="access" description="public"/>
+        <tag line="3" name="author" description="Aaron Holmes &lt;aholmes@pureguru-software.com&gt;"/>
+        <tag line="3" name="copyright" description="Aaron Holmes April 25th, 2012"/>
+        <tag line="3" name="version" description="1.0"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="18" package="Default">
+        <name>$components</name>
+        <default><![CDATA[array('RequestHandler')]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="25" package="">
+        <name>index</name>
+        <type>function</type>
+        <docblock line="20">
+          <description><![CDATA[Lists all bowlers]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="20" name="return" description="List of bowlers" type="\xml">
+            <type by_reference="false">\xml</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="42" package="">
+        <name>view</name>
+        <type>function</type>
+        <docblock line="36">
+          <description><![CDATA[Lists a bowler with a given id]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="36" name="var" description="Bowler ID" type="int">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="36" name="return" description="Bowler" type="\xml">
+            <type by_reference="false">\xml</type>
+          </tag>
+        </docblock>
+        <argument line="42">
+          <name>$id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="Model/AppModel.php" hash="e9d700f16d481992170e657386480754" package="app\Model">
+    <docblock line="2">
+      <description><![CDATA[Application model for Cake.]]></description>
+      <long-description><![CDATA[<p>This file is application-wide model file. You can put all
+application-wide model-related methods here.</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.Model"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="default" line="33" package="app\Model">
+      <name>AppModel</name>
+      <full_name>\AppModel</full_name>
+      <extends>\Model</extends>
+      <docblock line="25">
+        <description><![CDATA[Application model for Cake.]]></description>
+        <long-description><![CDATA[<p>Add your application-wide methods in the class below, your models
+will inherit them.</p>]]></long-description>
+        <tag line="25" name="package" description="app.Model"/>
+      </docblock>
+    </class>
+  </file>
+  <file path="Model/User.php" hash="59e933863dedbd79bdce75bdd9b41c18" package="Default">
+    <parse_markers>
+      <error line="3" code="50018">No DocBlock was found for property $name</error>
+      <error line="5" code="50018">No DocBlock was found for property $validate</error>
+      <error line="42" code="50010">No DocBlock was found for method checkpasswords()</error>
+      <error line="47" code="50010">No DocBlock was found for method isUserBanned()</error>
+      <error line="51" code="50010">No DocBlock was found for method isUserActivated()</error>
+      <error line="55" code="50010">No DocBlock was found for method updateLastLogin()</error>
+      <error line="62" code="50010">No DocBlock was found for method isUniqueUsername()</error>
+      <error line="82" code="50010">No DocBlock was found for method activateUser()</error>
+      <error line="91" code="50010">No DocBlock was found for method getUserInfo()</error>
+      <error line="2" code="50000">No DocBlock was found for User</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file Model/User.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="2" package="Default">
+      <name>User</name>
+      <full_name>\User</full_name>
+      <extends>\AppModel</extends>
+      <property final="false" static="false" visibility="public" line="3" package="Default">
+        <name>$name</name>
+        <default><![CDATA["User"]]></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="5" package="Default">
+        <name>$validate</name>
+        <default><![CDATA[array(
+		'username' => array
+		(
+			'alphanumeric' => array
+				(
+					'rule' => 'alphaNumeric',
+					'message' => 'Only the letters A-z and digits 0-9 are allowed',
+                ),
+          	'length' => array
+              	(
+                 	'rule' => array('between', 4, 20),
+                   	'message' => "Your username must be between 4 and 20 characters long",
+           		),
+     	 ),
+         'passwrd' => array
+         (
+         	'passlength' => array (
+         		'rule' => array('minLength', 6),
+            	'message' => 'Your password must be at least 6 characters long'
+         	),
+         	'passconfirm' => array('rule' =>'checkpasswords','message' => 'Passwords do not match')
+           	
+         ),
+         'passwrd2' => array
+         (
+         	'passlength' => array (
+         		'rule' => array('minLength', 6),
+            	'message' => 'Your password must be at least 6 characters long'
+         	)
+           	
+         ),
+         'email' => array (
+         		'rule' => array('email'),
+            	'message' => 'Please provide a valid email address.'
+         	)
+        )]]></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="42" package="">
+        <name>checkpasswords</name>
+        <type>function</type>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="47" package="">
+        <name>isUserBanned</name>
+        <type>function</type>
+        <argument line="47">
+          <name>$username</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="51" package="">
+        <name>isUserActivated</name>
+        <type>function</type>
+        <argument line="51">
+          <name>$username</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="55" package="">
+        <name>updateLastLogin</name>
+        <type>function</type>
+        <argument line="55">
+          <name>$username</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="55">
+          <name>$time</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="62" package="">
+        <name>isUniqueUsername</name>
+        <type>function</type>
+        <argument line="62">
+          <name>$username</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="74" package="">
+        <name>getActivationHash</name>
+        <type>function</type>
+        <docblock line="68">
+          <description><![CDATA[Creates an activation hash for the current user.]]></description>
+          <long-description><![CDATA[<p>@param Void</p>]]></long-description>
+          <tag line="68" name="return" description="activation hash." type="String">
+            <type by_reference="false">String</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="82" package="">
+        <name>activateUser</name>
+        <type>function</type>
+        <argument line="82">
+          <name>$userID</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="default" line="91" package="">
+        <name>getUserInfo</name>
+        <type>function</type>
+        <argument line="91">
+          <name>$userID</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="Model/Bowler.php" hash="30bc8d389d367f96e9b94eb5f75636f4" package="Default">
+    <parse_markers>
+      <error line="3" code="50018">No DocBlock was found for property $name</error>
+      <error line="2" code="50000">No DocBlock was found for Bowler</error>
+      <error line="1" code="50007">No page-level DocBlock was found in file Model/Bowler.php</error>
+    </parse_markers>
+    <class final="false" abstract="false" namespace="default" line="2" package="Default">
+      <name>Bowler</name>
+      <full_name>\Bowler</full_name>
+      <extends>\AppModel</extends>
+      <property final="false" static="false" visibility="public" line="3" package="Default">
+        <name>$name</name>
+        <default><![CDATA["Bowler"]]></default>
+      </property>
+    </class>
+  </file>
+  <file path="webroot/index.php" hash="448ac336af879d83c9efe13eae51ecb1" package="app\webroot">
+    <docblock line="2">
+      <description><![CDATA[Index]]></description>
+      <long-description><![CDATA[<p>The Front Controller for handling every request</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.webroot"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <include line="77" type="Include" package="Default">
+      <name>Cake</name>
+    </include>
+    <include line="81" type="Include" package="Default">
+      <name>Unknown</name>
+    </include>
+    <constant namespace="default" line="25" package="Default">
+      <name>DS</name>
+      <value><![CDATA[DIRECTORY_SEPARATOR]]></value>
+    </constant>
+    <constant namespace="default" line="38" package="Default">
+      <name>ROOT</name>
+      <value><![CDATA[dirname(dirname(dirname(__FILE__)))]]></value>
+    </constant>
+    <constant namespace="default" line="45" package="Default">
+      <name>APP_DIR</name>
+      <value><![CDATA[basename(dirname(dirname(__FILE__)))]]></value>
+    </constant>
+    <constant namespace="default" line="67" package="Default">
+      <name>WEBROOT_DIR</name>
+      <value><![CDATA[basename(dirname(__FILE__))]]></value>
+    </constant>
+    <constant namespace="default" line="70" package="Default">
+      <name>WWW_ROOT</name>
+      <value><![CDATA[dirname(__FILE__) . DS]]></value>
+    </constant>
+  </file>
+  <file path="webroot/test.php" hash="1d49805642715eeccc0040b03ad944d5" package="app\webroot">
+    <docblock line="2">
+      <description><![CDATA[Web Access Frontend for TestSuite]]></description>
+      <long-description><![CDATA[<p>PHP 5</p>
+
+<p>CakePHP(tm) Tests <a href="http://book.cakephp.org/view/1196/Testing">http://book.cakephp.org/view/1196/Testing</a>
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice</p>]]></long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="http://book.cakephp.org/view/1196/Testing" link="http://book.cakephp.org/view/1196/Testing"/>
+      <tag line="2" name="package" description="app.webroot"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 1.2.0.4433"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <include line="74" type="Include" package="Default">
+      <name>Cake</name>
+    </include>
+    <include line="78" type="Include" package="Default">
+      <name>Unknown</name>
+    </include>
+    <include line="90" type="Require Once" package="Default">
+      <name>TestSuite</name>
+    </include>
+    <constant namespace="default" line="25" package="Default">
+      <name>DS</name>
+      <value><![CDATA[DIRECTORY_SEPARATOR]]></value>
+    </constant>
+    <constant namespace="default" line="38" package="Default">
+      <name>ROOT</name>
+      <value><![CDATA[dirname(dirname(dirname(__FILE__)))]]></value>
+    </constant>
+    <constant namespace="default" line="45" package="Default">
+      <name>APP_DIR</name>
+      <value><![CDATA[basename(dirname(dirname(__FILE__)))]]></value>
+    </constant>
+    <constant namespace="default" line="64" package="Default">
+      <name>WEBROOT_DIR</name>
+      <value><![CDATA[basename(dirname(__FILE__))]]></value>
+    </constant>
+    <constant namespace="default" line="67" package="Default">
+      <name>WWW_ROOT</name>
+      <value><![CDATA[dirname(__FILE__) . DS]]></value>
+    </constant>
+  </file>
+  <file path="View/Helper/AppHelper.php" hash="27d71250ed79e53c6f69ca7d3f95add2" package="app\View\Helper">
+    <docblock line="2">
+      <description><![CDATA[Application level View Helper]]></description>
+      <long-description><![CDATA[<p>This file is application-wide helper file. You can put all
+application-wide helper-related methods here.</p>
+
+<p>PHP 5</p>
+
+<p>CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)</p>
+
+<p>Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.</p>]]></long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.View.Helper"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="default" line="33" package="app\View\Helper">
+      <name>AppHelper</name>
+      <full_name>\AppHelper</full_name>
+      <extends>\Helper</extends>
+      <docblock line="25">
+        <description><![CDATA[Application helper]]></description>
+        <long-description><![CDATA[<p>Add your application-wide methods in the class below, your helpers
+will inherit them.</p>]]></long-description>
+        <tag line="25" name="package" description="app.View.Helper"/>
+      </docblock>
+    </class>
+  </file>
+  <file path="View/Users/activate.php" hash="4a892022169e34b4b6159f7992f2f647" package="Default">
+    <parse_markers>
+      <error line="1" code="50007">No page-level DocBlock was found in file View/Users/activate.php</error>
+    </parse_markers>
+  </file>
+  <package name="" full_name=""/>
+  <package name="Default" full_name="Default"/>
+  <package name="app" full_name="app">
+    <package name="Config" full_name="app\Config">
+      <package name="Schema" full_name="app\Config\Schema"/>
+    </package>
+    <package name="Console" full_name="app\Console">
+      <package name="Command" full_name="app\Console\Command"/>
+    </package>
+    <package name="Controller" full_name="app\Controller"/>
+    <package name="Model" full_name="app\Model"/>
+    <package name="View" full_name="app\View">
+      <package name="Helper" full_name="app\View\Helper"/>
+    </package>
+    <package name="webroot" full_name="app\webroot"/>
+  </package>
+  <package name="bowlingstats-admin" full_name="bowlingstats-admin"/>
+  <namespace name="default" full_name="default"/>
+  <marker count="0">todo</marker>
+  <marker count="0">fixme</marker>
+  <deprecated count="0"/>
+</project>

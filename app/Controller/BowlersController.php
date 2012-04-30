@@ -18,11 +18,14 @@
 
 class BowlersController extends AppController {
 	
-	public $components = array('RequestHandler', 'Auth', 'Session');
+	public $components = array('RequestHandler', 'Auth', 'Session', 'OAuth.OAuth');
     public $helpers = array("Session");
 	
 
-     
+     function beforeFilter() {
+        $this->Auth->Allow('*');
+        $this->Auth->autoRedirect = false;
+    }
 
     /**
      * Lists all bowlers
@@ -33,8 +36,11 @@ class BowlersController extends AppController {
 
         //$this->Auth->loginAction('/bowlers/login');
 
-        if ($this->Auth->login()) {
-            $user = $this->Auth->user();
+        /*
+$user = $this->Auth->user();
+if empty()
+        */
+
 
             //TODO: Update api logs
             //$this->User->id = $user['id'];
@@ -54,10 +60,7 @@ class BowlersController extends AppController {
             ));
             //will serialize to xml or json based on extension
             $this->set('_serialize', 'response');
-        } else {
-            $this->layout = false;
-            echo "no dice";
-        }
+
         /*
 		$this->layout = false;
         $bowlers = $this->Bowler->find('all');
