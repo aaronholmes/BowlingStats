@@ -26,7 +26,7 @@ class BowlingStatsAPIAuthComponent extends Component {
 		$data = json_decode($response->body, true);
 
 		// Refresh the access token using the refresh token and resend request
-		if($data['error_description'] == "The access token provided has expired.") {
+		if(isset($data['error_description']) && $data['error_description'] == "The access token provided has expired.") {
 			$accessToken = $http->get('www.bowlingstats.com/oauth/token?grant_type=refresh_token&refresh_token='.$user['User']['refresh_token'].'&client_id='.$user['User']['client_id'].'&client_secret='.$user['User']['client_secret']);
 
 			$data = json_decode($accessToken->body, true);

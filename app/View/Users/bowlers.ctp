@@ -26,7 +26,7 @@
 </table>
 
 <a class="btn" data-toggle="modal" href="#myModal1">Add New Bowler</a>
-<div class="modal fade" id="myModal1">
+<div class="modal hide" id="myModal1">
 	<?php echo $this->Form->create(null, array('type' => 'file', 'action' => 'bowlers')); ?>
   <div class="modal-header">
     <a class="close" data-dismiss="modal">×</a>
@@ -88,6 +88,7 @@
 
           //$( "#UserBirthdate" ).datepicker();
           //createUploader();        
+
         
       });
     </script>
