@@ -1,3 +1,5 @@
+
+<div id="bowlers"></div>
 <table class="table table-striped">
 	<thead>
     <tr>
@@ -25,9 +27,19 @@
   </tbody>
 </table>
 
+<div id="message"></div>
+
 <a class="btn" data-toggle="modal" href="#myModal1">Add New Bowler</a>
 <div class="modal hide" id="myModal1">
-	<?php echo $this->Form->create(null, array('type' => 'file', 'action' => 'bowlers')); ?>
+	<?php 
+    echo $this->Form->create(null, array(
+      'type' => 'file', 
+      'action' => 'addBowler',
+      'default' => false)); 
+
+
+    //UserAddBowlerForm
+  ?>
   <div class="modal-header">
     <a class="close" data-dismiss="modal">×</a>
     <h3>Add a New Bowler</h3>
@@ -74,7 +86,18 @@
 		
     ?>
 
-    <!--<script src="/js/fileuploader.js" type="text/javascript"></script>-->
+
+
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+    <?php echo $this->TwitterBootstrap->button("Add Bowler", array("style" => "primary", "size" => "medium")); ?>
+  </div>
+
+  
+
+  <?php echo $this->Form->end(); ?>
+  <!--<script src="/js/fileuploader.js" type="text/javascript"></script>-->
     <script>
       $(function() {
         
@@ -89,15 +112,24 @@
           //$( "#UserBirthdate" ).datepicker();
           //createUploader();        
 
+          $(".btn-primary").click(function() {  
+            alert('submitting form');
+            var dataString = "firstname=aaron";
+            $.ajax({  
+              type: "POST",  
+              url: "/users/bowlers",  
+              data: dataString,  
+              success: function() {  
+               alert('woo');
+                $('#message').html("<h2>Contact Form Submitted!</h2>")  
+                .append("<p>We will be in touch soon.</p>")  
+                .show();
+                $('#myModal1').modal('hide');    
+              }  
+            });  
+            return false;   
+          });  
         
       });
     </script>
-
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn" data-dismiss="modal">Close</a>
-    <?php echo $this->TwitterBootstrap->button("Add Bowler", array("style" => "primary", "size" => "medium")); ?>
-  </div>
-
-  <?php echo $this->Form->end(); ?>
 </div>

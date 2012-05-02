@@ -104,10 +104,30 @@ class UsersController extends AppController {
 	}
 
 	function bowlers() {
+
+		if ($this->request->is('post')) {
+			$location = "/api/1/bowlers.json";
+			$response = $this->BowlingStatsAPIAuth->postData($location, $this->request->data);
+			$data = json_decode($response->body, true);
+			var_dump($response->body);
+			if($data['success']) {
+				$this->set('bowlerAdded', true);
+			}
+/*
+
+			try {
+			    $bowlers = json_decode($response->body, true);
+			    if(!empty($bowlers['response']['data'])) {
+			    	$this->set('bowlers', $bowlers['response']['data']['bowlers']['bowler']);
+			    }
+			} catch (XmlException $e) {
+			    $bowlers = null;
+			    $this->set('bowlers', $bowlers);	
+			}	*/
+		}
+
 		$location = "/api/1/bowlers.json";
 		$response = $this->BowlingStatsAPIAuth->fetchData($location);
-		//var_dump($response);
-		//var_dump(json_decode($response->body, true));
 
 		try {
 		    $bowlers = json_decode($response->body, true);
@@ -117,24 +137,7 @@ class UsersController extends AppController {
 		} catch (XmlException $e) {
 		    $bowlers = null;
 		    $this->set('bowlers', $bowlers);	
-		}
-
-		/*
-
-		XML API
-
-		try {
-		    $bowlers = Xml::toArray(Xml::build($response->body));
-		    if(!empty($bowlers['response']['data'])) {
-		    	$this->set('bowlers', $bowlers['response']['data']['bowlers']['bowler']);
-		    }
-		} catch (XmlException $e) {
-		    $bowlers = null;
-		    $this->set('bowlers', $bowlers);	
-		}
-		*/
-		
-					
+		}					
 	}
 
 	/**

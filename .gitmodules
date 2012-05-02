@@ -1,0 +1,24 @@
+[submodule "app/webroot/js/jsmvcsteal"]
+	path = app/webroot/js/jsmvcsteal
+	url = https://github.com/aaronholmes/steal.git
+[submodule "app/webroot/js/jsmvcjquery"]
+	path = app/webroot/js/jsmvcjquery
+	url = https://github.com/aaronholmes/jquerymx.git
+[submodule "app/webroot/js/jsmvcdocumentjs"]
+	path = app/webroot/js/jsmvcdocumentjs
+	url = https://github.com/aaronholmes/documentjs.git
+[submodule "app/webroot/js/jsmvcfuncunit"]
+	path = app/webroot/js/jsmvcfuncunit
+	url = https://github.com/aaronholmes/funcunit.git
+[submodule "app/webroot/js/jsmvc/steal"]
+	path = app/webroot/js/jsmvc/steal
+	url = https://github.com/aaronholmes/steal.git
+[submodule "app/webroot/js/jsmvc/jquery"]
+	path = app/webroot/js/jsmvc/jquery
+	url = https://github.com/aaronholmes/jquerymx.git
+[submodule "app/webroot/js/jsmvc/documentjs"]
+	path = app/webroot/js/jsmvc/documentjs
+	url = https://github.com/aaronholmes/documentjs.git
+[submodule "app/webroot/js/jsmvc/funcunit"]
+	path = app/webroot/js/jsmvc/funcunit
+	url = https://github.com/aaronholmes/funcunit.git

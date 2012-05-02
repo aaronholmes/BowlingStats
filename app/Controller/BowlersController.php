@@ -78,4 +78,23 @@ class BowlersController extends AppController {
 
         $this->set('bowlerData', $bowlerData);
     }
+
+    public function add() {
+        $this->layout = false;
+        //var_dump($_REQUEST);
+        //echo "test";
+
+print_r($this->request->data);
+unset($this->request->data['User']['Profile Image:']);
+print_r($this->request->data['User']);
+
+        if ($this->Bowler->save($this->request->data)) {
+            $this->set('response', array('success' => true));
+        } else {
+            $this->set('response', array('success' => false));
+        }
+
+        $this->set('response', array('success' => true));
+        $this->set('_serialize', 'response');
+    }
 }
